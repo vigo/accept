@@ -10,3 +10,8 @@
 
 A lightweight Go library for parsing HTTP `Accept` headers and selecting the
 most suitable `Content-Type`.
+
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/MIME_types
+- https://developer.mozilla.org/en-US/docs/Glossary/Quality_values
