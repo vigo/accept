@@ -1,0 +1,27 @@
+mode: set
+github.com/vigo/accept/accept.go:23.42,23.60 1 1
+github.com/vigo/accept/accept.go:24.42,24.70 1 1
+github.com/vigo/accept/accept.go:25.42,25.73 1 1
+github.com/vigo/accept/accept.go:33.72,37.29 3 1
+github.com/vigo/accept/accept.go:37.29,42.25 4 1
+github.com/vigo/accept/accept.go:42.25,43.40 1 1
+github.com/vigo/accept/accept.go:43.40,44.39 1 1
+github.com/vigo/accept/accept.go:44.39,46.20 2 1
+github.com/vigo/accept/accept.go:46.20,48.7 1 1
+github.com/vigo/accept/accept.go:53.3,53.73 1 1
+github.com/vigo/accept/accept.go:56.2,58.19 2 1
+github.com/vigo/accept/accept.go:63.63,66.45 2 1
+github.com/vigo/accept/accept.go:66.45,67.33 1 1
+github.com/vigo/accept/accept.go:67.33,68.39 1 1
+github.com/vigo/accept/accept.go:68.39,70.5 1 1
+github.com/vigo/accept/accept.go:72.3,72.56 1 1
+github.com/vigo/accept/accept.go:72.56,73.42 1 1
+github.com/vigo/accept/accept.go:73.42,75.5 1 1
+github.com/vigo/accept/accept.go:79.2,79.28 1 1
+github.com/vigo/accept/accept.go:86.59,87.38 1 1
+github.com/vigo/accept/accept.go:87.38,89.3 1 1
+github.com/vigo/accept/accept.go:93.52,94.38 1 1
+github.com/vigo/accept/accept.go:94.38,96.3 1 1
+github.com/vigo/accept/accept.go:100.49,105.30 2 1
+github.com/vigo/accept/accept.go:105.30,107.3 1 1
+github.com/vigo/accept/accept.go:109.2,109.13 1 1
