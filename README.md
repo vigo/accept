@@ -102,6 +102,17 @@ func main() {
 
 ---
 
+## Rake Tasks
+
+```bash
+rake -T
+
+rake coverage  # show test coverage
+rake test      # run test
+```
+
+---
+
 ## Contributor(s)
 
 * [Uğur Özyılmazel](https://github.com/vigo) - Creator, maintainer
