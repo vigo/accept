@@ -1,10 +1,10 @@
 ![Version](https://img.shields.io/badge/version-0.1.0-orange.svg)
 ![Go](https://img.shields.io/github/go-mod/go-version/vigo/accept)
 [![Documentation](https://godoc.org/github.com/vigo/accept?status.svg)](https://pkg.go.dev/github.com/vigo/accept)
-[![Go Report Card](https://goreportcard.com/badge/github.com/vigo/accept)](https://goreportcard.com/report/github.com/vigo/accept)
 [![golangci-lint](https://github.com/vigo/accept/actions/workflows/golangci-lint.yml/badge.svg)](https://github.com/vigo/accept/actions/workflows/golangci-lint.yml)
 [![Test go code](https://github.com/vigo/accept/actions/workflows/test.yml/badge.svg)](https://github.com/vigo/accept/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/vigo/accept/graph/badge.svg?token=88BNNWA3K0)](https://codecov.io/gh/vigo/accept)
+[![Go Report Card](https://goreportcard.com/badge/github.com/vigo/accept)](https://goreportcard.com/report/github.com/vigo/accept)
 ![Powered by Rake](https://img.shields.io/badge/powered_by-rake-blue?logo=ruby)
 
 # accept
