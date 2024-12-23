@@ -1,7 +1,7 @@
 package accept
 
 import (
-	"sort"
+	"slices"
 	"strconv"
 	"strings"
 )
@@ -19,10 +19,18 @@ type MediaType struct {
 // MediaTypes is a collection of MediaType.
 type MediaTypes []MediaType
 
-// Len, Less, Swap implement sort.Interface for MediaTypes.
-func (mt MediaTypes) Len() int           { return len(mt) }
-func (mt MediaTypes) Less(i, j int) bool { return mt[i].Q > mt[j].Q }
-func (mt MediaTypes) Swap(i, j int)      { mt[i], mt[j] = mt[j], mt[i] }
+// Sort sorts the MediaTypes in descending order of Q value.
+func (mt *MediaTypes) Sort() {
+	slices.SortStableFunc(*mt, func(a, b MediaType) int {
+		if a.Q > b.Q {
+			return -1
+		} else if a.Q < b.Q {
+			return 1
+		}
+
+		return 0
+	})
+}
 
 // ContentNegotiation holds required arguments.
 type ContentNegotiation struct {
@@ -53,7 +61,7 @@ func (*ContentNegotiation) parseAcceptHeader(header string) MediaTypes {
 		mediaTypes = append(mediaTypes, MediaType{Type: mediaType, Q: qValue})
 	}
 
-	sort.Sort(mediaTypes)
+	mediaTypes.Sort()
 
 	return mediaTypes
 }
@@ -62,7 +70,6 @@ func (*ContentNegotiation) parseAcceptHeader(header string) MediaTypes {
 // If no match is found, it returns the default media type.
 func (cn *ContentNegotiation) Negotiate(header string) string {
 	acceptedTypes := cn.parseAcceptHeader(header)
-
 	for _, acceptedType := range acceptedTypes {
 		if acceptedType.Type == "*/*" {
 			if len(cn.supportedMediaTypes) > 0 {

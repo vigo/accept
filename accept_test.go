@@ -2,7 +2,6 @@ package accept_test
 
 import (
 	"fmt"
-	"sort"
 	"testing"
 
 	"github.com/vigo/accept"
@@ -114,7 +113,7 @@ func TestMediaTypesSorting(t *testing.T) {
 		{Type: "application/xml", Q: 0.7},
 	}
 
-	sort.Sort(mediaTypes)
+	mediaTypes.Sort()
 
 	expectedOrder := []string{"text/html", "application/json", "application/xml"}
 	for i, mt := range mediaTypes {
