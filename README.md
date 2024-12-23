@@ -4,6 +4,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/vigo/accept)](https://goreportcard.com/report/github.com/vigo/accept)
 [![golangci-lint](https://github.com/vigo/accept/actions/workflows/golangci-lint.yml/badge.svg)](https://github.com/vigo/accept/actions/workflows/golangci-lint.yml)
 [![Test go code](https://github.com/vigo/accept/actions/workflows/test.yml/badge.svg)](https://github.com/vigo/accept/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/vigo/accept/graph/badge.svg?token=88BNNWA3K0)](https://codecov.io/gh/vigo/accept)
 ![Powered by Rake](https://img.shields.io/badge/powered_by-rake-blue?logo=ruby)
 
 # accept
