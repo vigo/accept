@@ -34,7 +34,8 @@ go get -u github.com/vigo/accept
 
 By default, unless otherwise specified, the fallback content type is always
 set to `application/json`. If desired, you can customize the fallback value
-using `WithDefaultMediaType` method.
+using `WithDefaultMediaType` method. Also, if request `Accept` header is `*/*`,
+library matches first supported media type too.
 
 ```go
 // your server supports: application/json and text/html
@@ -57,6 +58,7 @@ Full example, your server supports: `application/json`, `text/html` and
 default fallback value.
 
 ```go
+# main.go
 package main
 
 import (
@@ -98,6 +100,22 @@ func main() {
 	http.HandleFunc("/", handlerFunc(contentNegotiator))
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
+```
+
+Run the server:
+
+```bash
+go run main.go
+```
+
+Test the requests:
+
+```bash
+curl localhost:8080 -H 'Accept: text/html'
+curl localhost:8080 -H 'Accept: text/plain'
+curl localhost:8080 -H 'Accept: text/markdown'     # fallback to "text/plain"
+curl localhost:8080 -H 'Accept: application/json'
+curl localhost:8080                                # curl sends */*, first match is "application/json"
 ```
 
 ---
