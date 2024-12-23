@@ -1,4 +1,10 @@
-# Contribute
+## Contributor(s)
+
+* [Uğur Özyılmazel](https://github.com/vigo) - Creator, maintainer
+
+---
+
+## Contribute
 
 All PR’s are welcome!
 
@@ -7,3 +13,5 @@ All PR’s are welcome!
 1. `commit` yours (`git commit -am 'add some functionality'`)
 1. `push` your `branch` (`git push origin my-feature`)
 1. Than create a new **Pull Request**!
+
+---
