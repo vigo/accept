@@ -12,7 +12,7 @@
 A lightweight Go library for parsing HTTP `Accept` headers and selecting the
 most suitable `Content-Type`.
 
-Documents followed for `Accept` http reques header:
+Documents followed for `Accept` http request header:
 
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type
