@@ -4,12 +4,30 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    ignore:
-      - dependency-name: "actions/setup-go"
-        versions: ["3.x"]
+    reviewers:
+      - "vigo"
+    assignees:
+      - "vigo"
+    labels:
+      - "dependabot"
+      - "github-actions"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "[gha] - upgrade github action dependencies"
+      include: "scope"
 
   - package-ecosystem: "gomod"
     directory: "/"
     schedule:
       interval: "daily"
-    open-pull-requests-limit: 0
+    reviewers:
+      - "vigo"
+    assignees:
+      - "vigo"
+    labels:
+      - "dependabot"
+      - "gomod"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "[gomod] - upgrade go dependencies"
+      include: "scope"
