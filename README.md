@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/version-0.1.0-orange.svg)
+![Version](https://img.shields.io/badge/version-0.2.0-orange.svg)
 ![Go](https://img.shields.io/github/go-mod/go-version/vigo/accept)
 [![Documentation](https://godoc.org/github.com/vigo/accept?status.svg)](https://pkg.go.dev/github.com/vigo/accept)
 [![golangci-lint](https://github.com/vigo/accept/actions/workflows/golangci-lint.yml/badge.svg)](https://github.com/vigo/accept/actions/workflows/golangci-lint.yml)
